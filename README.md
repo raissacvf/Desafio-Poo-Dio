@@ -1,15 +1,34 @@
-Desafio: Aprenda na Prática Programação Orientada a Objetos
+Modelagem de Sistema Bootcamp em Java (POO)
 
-🛑 Pré-Requisitos
-✅ Conhecer a sintaxe da Java
-✅ Java JDK 11
-✅ IDE para desenvolvimento Java (usarei IntelliJ)
-✅ Git
-✅ Conta no GitHub
+Este repositório contém a solução para o desafio de modelagem de domínio, cujo objetivo é aplicar e demonstrar os 4 pilares da Programação Orientada a Objetos (POO) em um contexto prático: a gestão de um Bootcamp e o progresso dos Desenvolvedores (Devs).
 
-👣 Passo-a-Passo
-1. Vamos ABSTRAIR o DOMÍNIO Bootcamp e MODELAR seus ATRIBUTOS E MÉTODOS
-2. Criaremos as CLASSES: Bootcamp, Cursos, Mentorias e Devs e vamos relaciona-las
-3. As CLASSES Curso, Mentoria e Devs também serão MODELADOS, ou seja, criaremos seus ATRIBUTOS E MÉTODOS
-4. Para que o código fique mais legível e de fácil manutenção, iremos utilizar de algumas das ferramentas que o PARADIGMA DE ORIENTAÇÃO A OBJETOS (POO) nos oferece: ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO
-5. E para representar CLASSES que foram criadas e relacionadas, iremos transforma-las em OBJETOS
+Conceitos de POO Aplicados:
+
+Abstração: A classe abstrata Conteudo define o comportamento comum (título, descrição, calcularXp()) de todo material de ensino.
+
+Herança: As classes Curso e Mentoria herdam de Conteudo.
+
+Polimorfismo: O método calcularXp() é sobrescrito em Curso e Mentoria, com regras de cálculo diferentes.
+
+Encapsulamento: Todos os atributos são privados, acessados via Getters e Setters, protegendo a integridade dos dados.
+
+Tecnologias e Pré-Requisitos:
+
+Linguagem Java: JDK 11 ou superior
+
+Ambiente: IDE para desenvolvimento Java (IntelliJ, Eclipse, VS Code)
+
+Controle de Versão: Git
+
+Hospedagem: Conta no GitHub
+
+Estrutura do Domínio:
+
+Conteudo (Classe Abstrata): Base para Cursos e Mentorias.
+
+Curso / Mentoria: Implementações de Conteudo.
+
+Dev: Gerencia seu progresso e calcula o XP total.
+
+Bootcamp: Agrega Conteúdos e Devs.
+
